@@ -15,6 +15,7 @@
   ],
   "require": {
     "php": "^7.4|^8.0",
+    "ext-json": "*",
     "topthink/framework": "^6.0.0",
     "overtrue/wechat": "^5.5"
   },
@@ -32,7 +33,7 @@
         "larva\\wechat\\WechatService"
       ],
       "config":{
-        "sms": "config/wechat.php"
+        "wechat": "config/wechat.php"
       }
     }
   },
