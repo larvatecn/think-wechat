@@ -69,7 +69,23 @@ $officialAccount = Wechat::officialAccount('test'); // 公众号
 
 更多 SDK 的具体使用请参考：https://easywechat.com
 
+#### 中间件参数说明
+
+由于ThinkPHP中间件只支持一个参数，所以以:做分割
+
+支持传入account账号别名以及scope类型
+
+若不传入account，会使用default账号
+
+若不传入scope，会使用配置文件中的oauth.scope
+
+支持一下两种方式
+
+default:snsapi_base
+snsapi_base
+
 ## 参考项目
 
 -   [overtrue/laravel-wechat](https://github.com/overtrue/laravel-wechat)
 -   [naixiaoxin/think-wechat](https://github.com/naixiaoxin/think-wechat)
+
