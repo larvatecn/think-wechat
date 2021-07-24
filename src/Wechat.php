@@ -3,6 +3,7 @@ declare (strict_types=1);
 
 namespace larva\wechat;
 
+use EasyWeChat\OfficialAccount\Application;
 use think\Facade;
 
 class Wechat extends Facade
@@ -12,16 +13,16 @@ class Wechat extends Facade
      *
      * @return string
      */
-    public static function getFacadeAccessor(): string
+    public static function getFacadeClass(): string
     {
         return 'wechat.official_account';
     }
 
     /**
      * @param mixed $name
-     * @return \EasyWeChat\OfficialAccount\Application
+     * @return Application
      */
-    public static function officialAccount($name = '')
+    public static function officialAccount($name = ''): Application
     {
         return $name ? app('wechat.official_account.' . $name) : app('wechat.official_account');
     }
