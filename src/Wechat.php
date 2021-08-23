@@ -13,7 +13,7 @@ class Wechat extends Facade
      *
      * @return string
      */
-    public static function getFacadeAccessor(): string
+    public static function getFacadeClass(): string
     {
         return 'wechat.official_account';
     }
