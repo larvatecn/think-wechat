@@ -3,9 +3,9 @@ declare (strict_types=1);
 
 namespace larva\wechat;
 
-use think\facade\Route;
+use think\Service;
 
-class WechatService extends \think\Service
+class WechatService extends Service
 {
     /**
      * @var array|string[]

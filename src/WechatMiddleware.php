@@ -9,6 +9,9 @@ use think\facade\Event;
 use think\facade\Session;
 use think\Request;
 
+/**
+ * 认证中间件
+ */
 class WechatMiddleware
 {
     /**
