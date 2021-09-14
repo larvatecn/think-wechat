@@ -2,7 +2,6 @@
   "name": "larva/think-wechat",
   "description": "The ThinkPHP EasyWechat package.",
   "license": "MIT",
-  "homepage": "https://www.larva.com.cn",
   "support": {
     "issues": "https://github.com/larvatecn/think-wechat/issues",
     "source": "https://github.com/larvatecn/think-wechat"
@@ -21,7 +20,7 @@
   },
   "autoload": {
     "psr-4": {
-      "larva\\wechat\\": "src"
+      "Larva\\Wechat\\": "src"
     }
   },
   "extra": {
@@ -30,7 +29,7 @@
     },
     "think": {
       "services": [
-        "larva\\wechat\\WechatService"
+        "Larva\\Wechat\\WechatService"
       ],
       "config":{
         "wechat": "config/wechat.php"

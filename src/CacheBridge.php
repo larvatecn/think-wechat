@@ -1,7 +1,7 @@
 <?php
 declare (strict_types=1);
 
-namespace larva\wechat;
+namespace Larva\Wechat;
 
 use Psr\SimpleCache\CacheInterface;
 use think\Cache;

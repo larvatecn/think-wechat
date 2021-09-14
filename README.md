@@ -50,7 +50,7 @@ class Wechat extends Controller
 #### 获得 SDK 实例 使用 Facade
 
 ```php
-use larva\wechat\Wechat;
+use Larva\Wechat\Wechat;
 
 $officialAccount = Wechat::officialAccount();  // 公众号
 $work = Wechat::work(); // 企业微信
