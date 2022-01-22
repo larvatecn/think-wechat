@@ -3,6 +3,7 @@ declare (strict_types=1);
 
 namespace Larva\Wechat;
 
+use think\Cache;
 use think\Service;
 
 class WechatService extends Service
@@ -39,7 +40,7 @@ class WechatService extends Service
                     $account_config = array_merge($module_default, $default, $config);
                     $account_app = app($app, ['config' => $account_config]);
                     if (config('wechat.default.use_tp_cache')) {
-                        $account_app['cache'] = app(CacheBridge::class);
+                        $account_app['cache'] = app(Cache::class);
                     }
                     return $account_app;
                 });
